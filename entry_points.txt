@@ -1,0 +1,2 @@
+[console_scripts]
+terminalai = terminalai.cli

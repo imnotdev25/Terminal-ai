@@ -1,2 +1,0 @@
-black src
-isort src

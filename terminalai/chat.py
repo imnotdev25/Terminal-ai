@@ -1,5 +1,5 @@
 import google.generativeai as genai
-from term_ai.config import API_KEY
+from terminalai.config import API_KEY
 
 genai.configure(api_key=API_KEY)
 
@@ -22,12 +22,3 @@ def get_response(input: str) -> str:
     ]
     response = model.generate_content(prompt_parts)
     return response.text
-
-
-def read_input():
-    if not sys.stdin.isatty():
-        return sys.stdin.read().strip()
-    elif len(sys.argv) > 1:
-        return sys.argv[1]
-    else:
-        return " "

@@ -2,21 +2,20 @@ from setuptools import find_packages
 from setuptools import setup
 
 setup(
-    name="term-ai",
-    version="0.0.1",
+    name="terminalai",
+    version="0.0.5",
     license="GNU General Public License v2.0",
     author="Talaviya Bhavik",
     author_email="talaviyabhavik@proton.me",
     description="AI Terminal assistant",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    url="https://github.com/imnotdev25/Term-ai",
+    packages=find_packages("terminalai"),
+    package_dir={"": "terminalai"},
+    url="https://github.com/imnotdev25/Terminal-ai",
     project_urls={
-        "Bug Report": "https://github.com/imnotdev25/Term-ai/issues/new",
+        "Bug Report": "https://github.com/imnotdev25/Terminal-ai/issues/new",
     },
     install_requires=[
-        "google-generative-ai",
-        "rich",
+        "google-generativeai",
         "httpx",
     ],
     long_description=open("README.md", encoding="utf-8").read(),
